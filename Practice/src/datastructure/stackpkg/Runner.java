@@ -11,6 +11,14 @@ package datastructure.stackpkg;
  */
 public class Runner {
     public static void main(String[] args) {
+        Stack num = new Stack();
         
+        num.push(15);
+        num.push(20);
+        num.push(30);
+        int data = num.pop();
+        System.out.println("POP :- "+data);
+        
+        num.show();
     }
 }

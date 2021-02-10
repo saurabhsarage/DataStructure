@@ -12,8 +12,21 @@ package datastructure.stackpkg;
 public class Stack {
 
     int[] stack = new int[5];
+    int top = 0;
     public void push(int i) {
-        
+        stack[top] = i;
+        top++;
     }
     
+    public int pop(){
+        int data = stack[--top];
+        stack[top] = 0;
+        
+        return data;
+    }
+    public void show(){
+        for (int i : stack) {
+            System.out.print(i + " ");
+        }
+    }
 }
